@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<sc>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isNar(value){
+            var valDum = value
+            var numString = value.toString()
+            var count = 0
+            var sum = 0
+            while(valDum>=1){
+                valDum/=10
+                count++
+            }
+            for(var i=0;i<numString.length;i++){
+                var int = parseInt(numString[i])
+                sum+=Math.pow(int,count)
+            }
+            if(sum===value){
+                return true
+            }else{
+                return false
+            }
+
+        }
+
+        console.log(isNar(7))
+        console.log(isNar(371))
+        console.log(isNar(2341))
+    </script>
+</body>
+</html>

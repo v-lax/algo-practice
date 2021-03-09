@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vowelArray = ['a','e','i','o','u','A','E','I','O','U']
+        function removeVowels(str){
+            var testStr = str
+            for (var i=0;i<str.length;i++){
+               var char = str[i]
+                if(vowelArray.indexOf(char)>=0){
+                     testStr=testStr.replace(char, '');
+                     console.log('this is a vowel')
+                }
+            }
+
+            return testStr
+        }
+
+        console.log(removeVowels('This website is for losers LOL you idiot!'))
+    </script>
+</body>
+</html>
