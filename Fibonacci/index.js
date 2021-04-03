@@ -57,5 +57,3 @@ function fib5(n){
   return value
 }
 
-
-console.log(fib5(4));
